@@ -1,0 +1,25 @@
+¡Oh, no, nos han alcanzado! El ratón ha explotado y las flechas no responden.
+¿Qué podemos hacer? Ya sé, usaremos hjkl para escaparnos a través del
+laberinto:
+
+
+
+          ↑
+          k         Hint: The `h`{normal} key is at the left and moves left.
+     ← h    l →           The `l`{normal} key is at the right and moves right.
+         j                The `j`{normal} key looks like a down arrow.
+         ↓
+
+
+in
+┌ ────┬─────┐
+│     │     │
+├───╴ ├─╴ │ │
+│     │   │ │
+│ ╶───┘ ┌─┘ │
+│       │   │
+└───────┴ ──┘
+        out
+
+Maze taken from https://www.vidarholen.net/cgi-bin/labyrinth?w=8&h=5
+and adapted with ./fix_maze.py
