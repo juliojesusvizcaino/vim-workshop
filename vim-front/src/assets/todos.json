@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "content": "Fix something",
+        "done": false
+    },
+    {
+        "id": 2,
+        "content": "Fix something else",
+        "done": false
+    },
+    {
+        "id": 3,
+        "content": "Already fixed",
+        "done": true
+    }
+]

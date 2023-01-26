@@ -1,0 +1,59 @@
+<div class="p-8">
+    <h1 class="text-2xl mb-2">Las cosicas: <span class="text-sm text-gray-500">(el objetivo es desbloquear y completar
+            todas las tareas)</span></h1>
+    <ul class="flex flex-col gap-2 mb-2">
+        <!-- <li *ngFor="let todo of (todoService.todos$ | async)" class="p-2 bg-blue-100"> -->
+        <!--     <span [ngClass]="{'line-through': todo.done}"> -->
+        <!--         {{ todo.content }} {{ todo.content }} -->
+        <!--     </span> -->
+        <!--     <button *ngIf="!todo.done" class="border-blue-800 border-2 rounded mr-2">Mark as completed</button> -->
+        <!-- </li> -->
+        <li>
+            <h1>The tasks are hidden, take a look at todo.service.ts and change the secret key</h1>
+            <p>The secret key is
+            <details class="italic font-mono">vim vam vum, bocadillo de atún</details>
+            </p>
+        </li>
+        <li *ngIf="todoService.keyIsCorrect">
+            <app-todo-item content="Now remove some duplicated words"
+                [done]="key2 === 'the the the other other string should should match match match match this one one one'"></app-todo-item>
+        </li>
+        <!-- key2 = 'the other string should match this one'; -->
+        <li *ngIf="key2 === 'the the the other other string should should match match match match this one one one'">
+            <app-todo-item content="now, just remove the ngIf statement below"></app-todo-item>
+        </li>
+        <li *ngIf="false"
+            class="also-not-used nothing nothing just-to-use-more-space and-a-bit-more it-is-for-preventing-the-attrs-to-auto-format"
+            data-something="not-used-at-all">
+            <app-todo-item content="and let's remove 6 words in the ngIf below (from the first &&)"></app-todo-item>
+        </li>
+        <li *ngIf="true && false && false && false">
+            <app-todo-item content="now, let's remove some lines, the wrapping hidden div"></app-todo-item>
+        </li>
+        <div class="hidden">
+            <li>
+                <app-todo-item
+                    content="the lines below are unordered, let's delete and paste them (first, uncomment them)"></app-todo-item>
+            </li>
+        </div>
+        <!-- <li> -->
+        <!--     <app-todo-item content="now [c]hange the condition below to make it work"> -->
+        <!--     </li> -->
+        <!-- </app-todo-item> -->
+        <!-- key2 = 'the other string should match this one'; -->
+        <li *ngIf="key2 === 'the other thing should vim this two'">
+            <app-todo-item
+                content="I changed the 'ipsum' words in the ngIf below with 'vimvam' and 'dolor' with 'vs****'"></app-todo-item>
+        </li>
+        <li
+            *ngIf="lorem === 'Lorem vimvam vs**** sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud vimvam Lorem est aliquip amet voluptate voluptate vs**** minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia vs**** Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.'">
+            <app-todo-item
+                content="Finally, let's reorder the string below"></app-todo-item>
+        </li>
+        <!-- key2 = 'the other string should match this one'; -->
+        <li *ngIf="key2 === 'should match this onethe other string '">
+            <app-todo-item
+                content="Nice! You are a vim expert now"></app-todo-item>
+        </li>
+    </ul>
+</div>
